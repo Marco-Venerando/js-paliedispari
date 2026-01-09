@@ -25,6 +25,7 @@ let userChoice = prompt("inserisci pari o dispari").toLocaleLowerCase();
 let UserNumber = parseInt(prompt("inserisci un numero da 1 a 5"));
 console.log(UserNumber);
 
+// funzione per generare un numero casuale
 function generaNumeroRandom() {
   return Math.floor(Math.random() * 5) + 1;
 }
@@ -32,8 +33,12 @@ function generaNumeroRandom() {
 const computerNumber = generaNumeroRandom();
 console.log(computerNumber);
 
+// generare un numero casuale senza la funzione
+
 // const computerNumber = Math.floor(Math.random() * 5) + 1;
-// console.log(computerNumber); senza la funzione
+// console.log(computerNumber);
+
+// faccio la somma
 
 let somma = UserNumber + computerNumber;
 console.log(somma);
@@ -44,6 +49,8 @@ function isPari(numero) {
 
 let risultato = isPari(somma) ? "pari" : "dispari";
 console.log("Risultato:", risultato);
+
+// risultato
 
 if (userChoice === risultato) {
   alert("Ha vinto l'UTENTE");
